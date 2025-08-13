@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>디지털 의류 여권 - EcoWear Inc.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background-color: #007b5e;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 1.5rem; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 0.9rem;
+    }
+    nav a:hover { text-decoration: underline; }
+    .banner {
+      background: url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b") center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #007b5e;
+    }
+    .about, .product, .sustainability {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .about p, .product p { line-height: 1.6; margin-bottom: 10px; }
+    .product img { max-width: 100%; border-radius: 10px; margin-top: 10px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .stat-card {
+      background: #f1f4f8;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-card span {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .stat-card strong { font-size: 1.2rem; color: #007b5e; }
+    footer {
+      background: #007b5e;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    footer span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EcoWear Inc.</h1>
+    <nav>
+      <a href="#about">기업소개</a>
+      <a href="#product">제품정보</a>
+      <a href="#sustainability">지속 가능성</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    지속 가능한 패션, 우리의 미래
+  </div>
+
+  <section class="section about" id="about">
+    <h2>기업 소개</h2>
+    <p>EcoWear Inc.는 지속 가능한 패션을 선도하는 글로벌 브랜드로, 
+      모든 의류 제품에 ‘디지털 의류 여권’을 도입하여 생산 과정과 환경 영향, 인권 지표를 투명하게 공개합니다.</p>
+    <p>우리는 100% 유기농 면, 재활용 소재, 친환경 염색 공정을 사용하며, 
+      생산 과정에서의 아동노동과 인권 침해를 철저히 배제합니다.</p>
+  </section>
+
+  <section class="section product" id="product">
+    <h2>제품 상세 정보</h2>
+    <p>제품명: Eco Basic Tee</p>
+    <p>특징: 부드러운 착용감, 내구성 높은 원단, 피부 자극 없는 친환경 염색</p>
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Eco Basic Tee">
+  </section>
+
+  <section class="section sustainability" id="sustainability">
+    <h2>지속 가능성 & 인권 지표</h2>
+    <div class="stats">
+      <div class="stat-card">
+        <span>아동노동착취 지수</span>
+        <strong>2 / 10 (낮음)</strong>
+      </div>
+      <div class="stat-card">
+        <span>탄소발자국</span>
+        <strong>3.1 kg CO₂</strong>
+      </div>
+      <div class="stat-card">
+        <span>물 사용량</span>
+        <strong>120L</strong>
+      </div>
+      <div class="stat-card">
+        <span>재활용률</span>
+        <strong>85%</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="contact">
+    <h2>문의하기</h2>
+    <p>이메일: contact@ecowear.com</p>
+    <p>주소: 서울특별시 중구 패션로 123</p>
+  </section>
+
+  <footer>
+    © 2025 EcoWear Inc. | Designed with care by <span>Chaehyeon Park</span>
+  </footer>
+
+</body>
+</html>
